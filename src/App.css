@@ -15,9 +15,15 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   overflow-y: auto; /* Content inside can scroll if needed */
+  position: relative;
 }
 .visit {
   text-align: center;
+  width: 200px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-top: 20px;
 }
 .visit a {
   text-decoration: none;
@@ -26,8 +32,5 @@ body {
 @media (max-width: 768px) {
   .main-cont {
     background-position: right center;
-  }
-  .visit {
-    width: 200px;
   }
 }

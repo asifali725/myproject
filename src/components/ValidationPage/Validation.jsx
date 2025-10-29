@@ -6,11 +6,6 @@ import "./Validation.css";
 const Validation = () => {
   const { id } = useParams(); // Get ID from URL
   const record = validationData.find((item) => item.deliverableId === id);
-  useEffect(() => {
-    console.log(id);
-    console.log(validationData);
-    console.log(record);
-  }, []);
 
   if (!record) {
     return (

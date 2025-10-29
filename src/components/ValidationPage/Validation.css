@@ -1,7 +1,7 @@
 .validation-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   flex: 1;
   padding: 20px 15px;
 }
@@ -14,9 +14,7 @@
   max-width: 650px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  min-height: 650px;
   margin-top: 110px;
-  position: relative;
 }
 
 /* Gray Header Bar */
@@ -26,7 +24,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 
 /* Green Check Circle */
@@ -63,10 +60,44 @@
   width: 210px;
 }
 .validation-footer-text {
-  position: absolute;
-  bottom: 0;
+  margin-top: 50px !important;
+}
+/* For search Page */
+.setital {
+  text-align: center;
+  font-size: 1.3em;
+}
+.search-container {
+  display: flex;
+  align-items: center;
 }
 
+.search-btn {
+  padding: 10px 12px;
+  background-color: #d6d5d5;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.search-input {
+  padding: 10px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1;
+  border-radius: 0;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background-color: #00049e;
+  padding: 8.5px;
+  border-radius: 0 4px 4px 0;
+}
+
+/* End of Search Page */
 /* Responsive Layout */
 @media (max-width: 767px) {
   .validation-wrapper {
@@ -78,7 +109,6 @@
   }
   .validation-card {
     max-width: 100%;
-    min-height: 700px;
     margin-top: 100px;
   }
 
@@ -95,5 +125,10 @@
     width: 35px;
     height: 35px;
     font-size: 24px;
+  }
+
+  .setital {
+    text-align: left;
+    /* font-size: 1.2em; */
   }
 }
