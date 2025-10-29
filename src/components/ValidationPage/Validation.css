@@ -1,0 +1,99 @@
+.validation-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 20px 15px;
+}
+
+/* Main Card */
+.validation-card {
+  background-color: #ffffff;
+  border-radius: 30px 30px 0 0;
+  width: 100%;
+  max-width: 650px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  min-height: 650px;
+  margin-top: 110px;
+  position: relative;
+}
+
+/* Gray Header Bar */
+.validation-top {
+  background: linear-gradient(to right, #d6d5d5 0%, #585858 100%);
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Green Check Circle */
+.check-circle {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: 3px solid #fff;
+  color: #97c00e;
+  border-radius: 50%;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  /* bottom: -24px; */
+}
+
+/* White Body Section */
+.validation-body {
+  background-color: #ffffff;
+  padding: 5px 15px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  color: #000000;
+}
+
+.validation-body p {
+  margin: 10px 0;
+  /* line-height: 1; */
+}
+.validation-body p strong {
+  display: inline-block;
+  width: 210px;
+}
+.validation-footer-text {
+  position: absolute;
+  bottom: 0;
+}
+
+/* Responsive Layout */
+@media (max-width: 767px) {
+  .validation-wrapper {
+    padding: 0px;
+    flex: 0;
+  }
+  .validation-top {
+    height: 70px;
+  }
+  .validation-card {
+    max-width: 100%;
+    min-height: 700px;
+    margin-top: 100px;
+  }
+
+  .validation-body {
+    padding: 10px 15px;
+    font-size: 13px;
+  }
+
+  .validation-body p strong {
+    display: block;
+  }
+
+  .check-circle {
+    width: 35px;
+    height: 35px;
+    font-size: 24px;
+  }
+}
