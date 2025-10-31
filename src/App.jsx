@@ -10,7 +10,7 @@ function App() {
       <div className="main-cont">
         <Head />
         <Routes>
-          <Route path="/Bureau-veritas" element={<ValidateSearch />} />
+          <Route path="/" element={<ValidateSearch />} />
           <Route path="/validate/:id" element={<Validation />} />
         </Routes>
         <p className="visit">
